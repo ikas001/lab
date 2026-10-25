@@ -6,5 +6,13 @@
   "publisherPrefix": "lab",
   "repo": "ikas001/lab",
   "mainRulesetId": 25828847,
-  "mainRulesetName": "lab-main-protection"
+  "mainRulesetName": "lab-main-protection",
+  "devEnvUrl": "https://wm-dev-3288.crm.dynamics.com",
+  "devEnvId": "a9db909d-cb5e-e600-af7c-d68af00b2400",
+  "devOrgId": "0606168a-98d0-f111-be87-6045bd06d928",
+  "devProfile": "dev",
+  "testEnvUrl": "https://wm-test-3288.crm.dynamics.com",
+  "testEnvId": "78c017e0-73fa-e6ba-8a2e-f7d88afd4405",
+  "testOrgId": "2ba69a1c-9dd0-f111-be87-6045bd06d93c",
+  "testProfile": "test"
 }
