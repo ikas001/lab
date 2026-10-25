@@ -11,6 +11,7 @@ export type PickItem = {
   id: string;
   name: string;
   sku: string;
+  barcode: string;
   quantity: number;
   /** The location's name, "" when the item has none. */
   location: string;
@@ -26,6 +27,7 @@ export function toPickItems(items: Lab_warehouseitems[], locations: Lab_warehous
     id: item.lab_warehouseitemid,
     name: item.lab_name ?? "",
     sku: item.lab_sku ?? "",
+    barcode: item.lab_barcode ?? "",
     quantity: Number(item.lab_availablequantity),
     location: locationNames.get(item._lab_locationid_value ?? "") ?? "",
   }));
@@ -42,6 +44,7 @@ export function usePickItems() {
           "lab_warehouseitemid",
           "lab_name",
           "lab_sku",
+          "lab_barcode",
           "lab_availablequantity",
           "_lab_locationid_value",
         ],
